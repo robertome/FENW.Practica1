@@ -46,15 +46,10 @@ function successLoginCallback(data, status, xhr) {
         $("#loginErrorModelDialogText").text("Token de autenticación NO verificado");
     } else {
         console.log("Token almacenando en session");
-        sessionStorage.setItem(TOKEN, parseToken(headerAutentication));
+        sessionStorage.setItem(TOKEN, headerAutentication);
 
         toggleLoginElements();
     }
-}
-
-function parseToken(headerAutentication) {
-    //console.log("Token: " + headerAutentication.split("Bearer ")[1]);
-    return headerAutentication.split("Bearer ")[1];
 }
 
 function checkIntegrity(responseAutentication, headerAutentication) {
@@ -87,8 +82,8 @@ function toggleLoginElements() {
 
 $(function () {
     //Conf navbar
-    $("#elFormLogin").on("submit", () => this.login());
-    $("#elButtonLogout").on("click", () => this.logout());
+    $("#elFormLogin").on("submit", () => login());
+    $("#elButtonLogout").on("click", () => logout());
     $("#elNavReservar").hide();
     $("#elSectionReservar").hide();
     $("#elNavLogout").hide();
