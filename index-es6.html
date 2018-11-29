@@ -1,0 +1,245 @@
+<!DOCTYPE HTML>
+<html lang='es'>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>UPM - Padel</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-grid.min.css" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <link href="css/jquery/jquery-ui.css" rel="stylesheet">
+    <script src="js/jquery/jquery-ui.js"></script>
+    <script src="js/jquery/datepicker-es.js"></script>
+
+    <link href="css/padel.css" rel="stylesheet">
+    <script type="module" src="js/padel-es6.js"></script>    
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar white"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div class="navbar-header">
+                <a class="navbar-brand" href="http://www.upm.es">
+                    <img src='imgs/upmlogo.jpg' id='upmlogo' class='bordes_redondos'/>
+                    P&aacute;del U.P.M.
+                </a>
+            </div>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-left">
+                <li id="elNavInicio"><a href="#elSectionInicio">INICIO</a></li>
+                <li id="elNavServicios"><a href="#elSectionServicios">SERVICIOS</a></li>
+                <li id="elNavInstalaciones"><a href="#elSectionInstalaciones">INSTALACIONES</a></li>
+                <li id="elNavRegistro"><a href="#elSectionRegistro">REGISTRO</a></li>
+                <li id="elNavReservar"><a href="#elSectionReservar">RESERVAR</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li id="elNavLogin">
+                    <form id="elFormLogin" role="form" class="form-inline" style="padding: 8px;">
+                        <div class=" form-group">
+                            <input id="elLoginFormUsuario" type="text" class="form-control" required="required"
+                                   pattern="[A-Za-z0-9]{1,20}" placeholder="Usuario"/>
+                        </div>
+                        <div class="form-group">
+                            <input id="elLoginFormPassword" type="password" class="form-control" required="required"
+                                   pattern="[A-Za-z0-9]{1,20}" placeholder="Password"/>
+                        </div>
+                        <button id="elButtonLogin" type="submit" class="btn btn-navbar btn-round">
+                            <span class="glyphicon glyphicon-log-in"/> LOG IN
+                        </button>
+                    </form>
+                </li>
+                <li id="elNavLogout" style="padding: 8px;">
+                    <button id="elButtonLogout" type="button" class="btn btn-navbar btn-round">
+                        <span class="glyphicon glyphicon-log-out"/> LOG OUT
+                    </button>
+                </li>
+                <!--<li id="elNavRegistro"><a href="#registro"><span class="glyphicon glyphicon-user"></span> REGISTRO</a></li>-->
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<section id="elSectionInicio" class="container-fluid">
+    <div style="clip: rect(0, 1600px, 400px, 0); position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -100;">
+        <div style="background-size: 100% auto; background-repeat: no-repeat no-repeat; background-image: url('imgs/home.jpg'); position: fixed; top: 0px; left: 0px; width: 100%; height: 100%; overflow: hidden; visibility: visible; transform: translate3d(0px, 0px, 0px);"></div>
+    </div>
+
+    <div class="container" style="height: 385px; padding: 100px">
+        <h3 class="stoke-text-white">¿Pensando en jugar al padel?</h3>
+        <h1 class="stoke-text-white">Pádel UPM</h1>
+        <a id="elButtonInicioRegistro" class="btn btn-lg btn-navbar btn-round" href="#elSectionRegistro">REGISTRATE</a>
+    </div>
+</section>
+
+<section id="elSectionServicios" class="container-fluid">
+    <header class="h1 section-header stoke-text-white">
+        SERVICIOS
+    </header>
+    <div class="container">
+        <div class="row">
+            <aside class="col-md-12">
+                <img src="imgs/red.jpg" class="img-responsive img-rounded" width="100%"/>
+            </aside>
+        </div>
+
+        <div class="row">
+            <section class="col-xs-12 col-sm-6 col-md-6">
+                <header class="h3">Escuela base de adultos e infantil</header>
+                <p class="text-justify font-italic">
+                    Nuestra escuela te ofrece múltiples opciones para aprender a practicar este deporte, clases
+                    colectivas
+                    de 3
+                    y 4 alumnos de 1 y 2 horas a la semana , clases particulares y clases de nivel competicion para
+                    aquellos
+                    jugadores que deseen perfeccionar y avanzar en su nivel de juego y en todos los casos impartidas por
+                    un
+                    profesorado altamente cualificado, incluyendo jugadores profesionales del circuito WPT, y
+                    debidamente
+                    formados para que el alumno aproveche y obtenga el mayor rendimiento posible de las clases.
+                </p>
+            </section>
+
+            <section class="col-xs-12 col-sm-6 col-md-6">
+                <header class="h3">Padel adaptado</header>
+                <p class="text-justify font-italic">
+                    La Asociación Padel para Todos (ASPADO) trabaja desde el año 2004 por la integración social de las
+                    personas
+                    con discapacidad a través de la práctica del deporte.
+
+                    Esta entidad no lucrativa, declarada de Utilidad Pública Nacional, cuenta con más de 200 socios, que
+                    contribuyen a la sostenibilidad de la organización y al mantenimiento de distintos recursos para
+                    facilitar
+                    la atención a deportistas con discapacidad de todas las edades, desde niños de 5 años hasta adultos
+                    de
+                    55.
+
+                    En estos momentos Pádel para Todos cuenta con 18 escuelas de pádel adaptado en funcionamiento, en
+                    las
+                    que
+                    atiende cada año a más de un centenar de personas con distintos tipos de discapacidad.
+
+                    El Club de Padel UPM forma parte de la asociación desde 2011, y mantiene su actividad durante todo
+                    el
+                    curso.
+                    Desde septiembre y hasta junio, los alumnos reciben una formación que contribuye a su desarrollo
+                    físico
+                    y
+                    cognitivo.
+                </p>
+            </section>
+        </div>
+    </div>
+</section>
+
+<section id="elSectionInstalaciones" class="container-fluid">
+    <header class="h1 section-header stoke-text-white">
+        INSTALACIONES
+    </header>
+    <div class="container text-justify font-italic">
+        <div class="row">
+            <div class="col-xs-12 col-sm-2 col-md-2"></div>
+            <div class="col-xs-12 col-sm-4 col-md-4">
+                <ul class="list-unstyled">
+                    <li>4 pistas de cristal cubiertas</li>
+                    <li>3 pistas de cristal semicubiertas</li>
+                    <li>3 pistas de cemento exteriores</li>
+                    <li>2 pistas de tenis</li>
+                </ul>
+            </div>
+            <div class="col-xs-12 col-sm-2 col-md-2"></div>
+            <div class="col-xs-12 col-sm-4 col-md-4">
+                <ul class="list-unstyled">
+                    <li>Vestuarios completos</li>
+                    <li>Cafeteria con terraza</li>
+                    <li>Parking</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <h3 class="text-center">Visitanos</h3>
+    <aside style="height: 30rem;">
+        <iframe style="border: 0; height: 100%; width: 100%" frameborder="0"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10524.42887796674!2d-3.631461884864183!3d40.38850528021028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0x17812255cddaf648!2sUPM+Campus+Sur!5e1!3m2!1ses!2ses!4v1430431509038">
+        </iframe>
+    </aside>
+</section>
+
+<section id="elSectionRegistro" class="container-fluid">
+    <header class="h1 section-header stoke-text-white">
+        REGISTRO
+    </header>
+    <form role="form" id="elFormRegistro" class="container">
+        <fieldset>
+            <legend>Registro de usuario</legend>
+            <div class="form-group">
+                <label for="elFormRegistroUsuario">Usuario:</label>
+                <input type="text" class="form-control" id="elFormRegistroUsuario">
+            </div>
+            <div class="form-group">
+                <label for="elFormRegistroEmail">Email:</label>
+                <input type="email" class="form-control" id="elFormRegistroEmail">
+            </div>
+            <div class="form-group">
+                <label for="elFormRegistroPassword">Clave:</label>
+                <input type="password" class="form-control" id="elFormRegistroPassword">
+            </div>
+            <div class="form-group">
+                <label for="elFormRegistroPasswordRepetida">Clave repetida:</label>
+                <input type="password" class="form-control" id="elFormRegistroPasswordRepetida">
+            </div>
+            <div class="form-group">
+                <label for="elFormRegistroFechaNacimiento">Fecha de nacimiento:</label>
+                <input type="text" class="form-control" id="elFormRegistroFechaNacimiento">
+            </div>
+            <button type="elFormRegistroSubmitButton" class="btn btn-primary">Enviar</button>
+        </fieldset>
+    </form>
+</section>
+
+<section id="elSectionReservar" class="container-fluid">
+    <header class="h1 section-header stoke-text-white">
+        RESERVAR
+    </header>
+    <h4>PROXIMAMENTE...</h4>
+</section>
+
+<!-- Footer -->
+<footer class="text-center">
+    <a id="elAnchorToTop" class="up-arrow" href="#myPage">
+        <span class="glyphicon glyphicon-chevron-up"></span>
+    </a><br><br>
+    <p><a href="http://www.upm.es" data-toggle="tooltip">http://www.upm.es</a></p>
+</footer>
+
+
+<!-- Vertical Center Modal -->
+<div id="loginErrorModalDialog" class="modal fade" role="dialog" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header ui-state-error">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 id="loginErrorModelDialogTitle" class="modal-title">Error de login</h4>
+            </div>
+            <div class="modal-body">
+                <span class="glyphicon glyphicon-alert logo"></span>
+                <p id="loginErrorModelDialogText">
+                    Login error text
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn ui-state-error" data-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

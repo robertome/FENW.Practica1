@@ -1,0 +1,113 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700);
+
+#upmlogo {
+    height: 45px;
+    display: inline;
+    margin-top: -13px;
+    opacity: 0.9
+}
+
+body {
+    font: 400 15px Poppins, sans-serif;
+    line-height: 1.8;
+    color: #000000;
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
+    margin-bottom: 30px;
+}
+
+h4, .h4 {
+    color: #333333
+}
+
+section {
+    margin-bottom: 32px;
+}
+
+footer {
+    background-color: #5680b0;
+    color: #ffffff;
+    padding: 32px;
+}
+
+footer a {
+    color: #ffffff;
+}
+
+.section-header {
+    background-color: #5680b0;
+    border: #5680b0 solid 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.stoke-text-white {
+    color: #ffffff;
+    text-shadow: -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+.font-italic {
+    font-style: italic;
+    /*font-weight: bold;*/
+    color: #818181;
+}
+
+.navbar {
+    margin-bottom: 0;
+    background-color: #5680b0;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 3px;
+    border-radius: 0;
+    font-family: Montserrat, sans-serif;
+}
+
+.navbar li a, .navbar .navbar-brand {
+    color: #fff !important;
+}
+
+.navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #5680b0 !important;
+    background-color: #fff !important;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+}
+
+.modal {
+    z-index: 100000;
+}
+
+.btn-navbar {
+    font-weight: 500;
+    color: #ffe484;
+    border-color: #ffe484;
+    background-color: transparent;
+}
+
+.btn-navbar:hover {
+    font-weight: 500;
+    color: #000000;
+    border-color: #ffe484;
+    background-color: #ffe484;
+}
+
+.btn-round {
+    border-radius: 32px;
+}
+
+.logo {
+    color: #f4511e;
+    font-size: 40px;
+    float: left; 
+    margin-left: .5em;    
+    margin-right: .5em;
+}
