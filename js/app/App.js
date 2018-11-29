@@ -85,8 +85,7 @@ export default class App {
         return false;
     }
 
-    logout() {
-        console.log("Token de session destruido");
+    logout() {        
         this._toggleLoginElements();
         this._tokenService.destroy();
     }
