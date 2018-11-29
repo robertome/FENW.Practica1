@@ -5,7 +5,7 @@ export default class TokenService {
     }
 
     store(token) {
-        console.log("Token almacenando en session");
+        console.log("Token almacenado en session");
         sessionStorage.setItem(this._tokenKey, token);
     }
 

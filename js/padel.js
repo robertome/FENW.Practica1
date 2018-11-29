@@ -45,7 +45,7 @@ function successLoginCallback(data, status, xhr) {
         $("#loginErrorModalDialog").modal();
         $("#loginErrorModelDialogText").text("Token de autenticación NO verificado");
     } else {
-        console.log("Token almacenando en session");
+        console.log("Token almacenado en session");
         sessionStorage.setItem(TOKEN, headerAutentication);
 
         toggleLoginElements();
@@ -63,7 +63,7 @@ function checkIntegrity(responseAutentication, headerAutentication) {
 }
 
 function logout() {
-    console.log("Token de session destruido");
+    console.log("Token eliminado de session");
     sessionStorage.clear();
 
     toggleLoginElements();
