@@ -47,6 +47,7 @@ function successLoginCallback(data, status, xhr) {
     } else {
         console.log("Token almacenado en session");
         sessionStorage.setItem(TOKEN, headerAutentication);
+        $("#elNavUsernameText").text($("#elLoginFormUsuario").val());
 
         toggleLoginElements();
     }
